@@ -1,0 +1,5 @@
+<launch>
+	<node name="odom_pub" pkg="tf_odom_publisher" type="odom_pub.py" output="screen"/>
+	<include file="$(find tortoisebot_gazebo)/launch/tortoisebot_playground.launch"/>
+	<include file="$(find tortoisebot_firmware)/launch/server_bringup.launch"/>
+</launch>
